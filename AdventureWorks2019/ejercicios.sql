@@ -35,3 +35,4 @@ SELECT e.FirstName AS nombre, e.LastName AS Apellido, e.Gender AS sexo, e.BirthD
 FROM [AdventureWorksDW2019].[dbo].[DimEmployee] AS e
 WHERE DATEDIFF( year, e.BirthDate, GETDATE()) > 40
 ORDER BY e.LastName, e.FirstName;
+
